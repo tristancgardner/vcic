@@ -7,8 +7,8 @@ import Sidebar from "@/components/sidebar"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Slide Deck App",
-  description: "Modern card-based slide deck application",
+  title: "VCIC",
+  description: "Ultimate Platform for Agentic Due Diligence",
 }
 
 export default function RootLayout({
