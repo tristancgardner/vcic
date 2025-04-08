@@ -88,7 +88,7 @@ export default function CardNavigation({ totalCards, activeCardId, onCardClick, 
               return (
                 <button
                   key={index}
-                  ref={(el) => (activeItemRefs.current[index] = el)}
+                  ref={(el) => { activeItemRefs.current[index] = el; }}
                   onClick={() => handleCardClick(index)}
                   className={cn(
                     "flex items-center transition-all duration-300 rounded-md px-2 py-1",

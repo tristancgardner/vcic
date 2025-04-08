@@ -88,7 +88,7 @@ export default function SerafDeepDive() {
       />
 
       {/* Card 1: Company Overview & Description */}
-      <Card id="card-1" ref={(el) => (cardRefs.current[0] = el)}>
+      <Card id="card-1" ref={(el) => { cardRefs.current[0] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">01 / 15</span>
           <h2 className="text-4xl font-bold gradient-heading">1. Company Overview & Description</h2>
@@ -133,9 +133,9 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Transform this 200-word summary about Curen’s origin, technology, and market focus into 3
-                        slides with minimal text and clear visuals or icons that represent ‘grid-scale battery storage’,
-                        ‘copper chemistry’, and ‘sustainability’ metrics.”
+                        "Transform this 200-word summary about Curen's origin, technology, and market focus into 3
+                        slides with minimal text and clear visuals or icons that represent 'grid-scale battery storage',
+                        'copper chemistry', and 'sustainability' metrics."
                       </div>
                     </div>
                   </div>
@@ -146,9 +146,9 @@ export default function SerafDeepDive() {
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Review the public data sources (like Aalto University research pages, LinkedIn profiles, any
-                        news articles) to confirm or check for inconsistencies about Curen’s founding year, current
+                        news articles) to confirm or check for inconsistencies about Curen's founding year, current
                         stage, patent coverage, or claimed cost advantages. Provide a bullet list of any discrepancies
-                        or unclear points that require follow-up in due diligence.”
+                        or unclear points that require follow-up in due diligence."
                       </div>
                     </div>
                   </div>
@@ -161,7 +161,7 @@ export default function SerafDeepDive() {
 
       {/* Continue with the rest of the cards, adding refs to each one */}
       {/* Card 2: Investment Thesis */}
-      <Card id="card-2" ref={(el) => (cardRefs.current[1] = el)}>
+      <Card id="card-2" ref={(el) => { cardRefs.current[1] = el; }}>
         {/* Card content remains the same */}
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">02 / 15</span>
@@ -214,10 +214,10 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Compare Curen’s core investment thesis with QuantumScape’s pitch in early 2018. Identify
+                        "Compare Curen's core investment thesis with QuantumScape's pitch in early 2018. Identify
                         similarities in market need, technology risk, and typical investor concerns, then tailor a
                         refined thesis for Curen that underscores how copper flow is simpler and more scalable than
-                        solid-state.”
+                        solid-state."
                       </div>
                     </div>
                   </li>
@@ -227,9 +227,9 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Propose three different scenarios (Bull, Base, Bear) for Curen’s future valuation and market
+                        "Propose three different scenarios (Bull, Base, Bear) for Curen's future valuation and market
                         traction. Identify the assumptions underlying each scenario and articulate how the investment
-                        thesis shifts in each case.”
+                        thesis shifts in each case."
                       </div>
                     </div>
                   </li>
@@ -242,7 +242,7 @@ export default function SerafDeepDive() {
 
       {/* Add refs to all remaining cards similarly */}
       {/* For brevity, I'm not showing all cards, but you would add ref={(el) => (cardRefs.current[index] = el)} to each Card component */}
-      <Card id="card-3" ref={(el) => (cardRefs.current[2] = el)}>
+      <Card id="card-3" ref={(el) => { cardRefs.current[2] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">03 / 15</span>
           <h2 className="text-4xl font-bold">3. What Needs To Be Believed (WNTBB)</h2>
@@ -295,9 +295,9 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "List the critical assumptions for Curen’s success and assign each a confidence level (High,
+                        "List the critical assumptions for Curen's success and assign each a confidence level (High,
                         Medium, Low). Then provide a brief rationale for each confidence level and suggest ways to test
-                        or validate those assumptions.”
+                        or validate those assumptions."
                       </div>
                     </div>
                   </li>
@@ -309,7 +309,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "For each assumption in the WNTBB list, rate its potential impact on returns (Low, Medium, High)
                         and the difficulty of proving or disproving it (Easy, Medium, Hard). Output your findings in a
-                        two-by-two matrix to identify quick wins versus high-risk items requiring deeper diligence.”
+                        two-by-two matrix to identify quick wins versus high-risk items requiring deeper diligence."
                       </div>
                     </div>
                   </li>
@@ -321,7 +321,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 4: Failure Risk */}
-      <Card id="card-4" ref={(el) => (cardRefs.current[3] = el)}>
+      <Card id="card-4" ref={(el) => { cardRefs.current[3] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">04 / 15</span>
           <h2 className="text-4xl font-bold">4. Failure Risk</h2>
@@ -381,7 +381,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Using data from real-world flow battery deployments (Invinity, ESS Inc., VRB Energy) on
                         time-to-market, R&D costs, manufacturing scale challenges, and typical pilot durations, compare
-                        how Curen’s timeline and budget plan may be vulnerable to underestimation of risk.”
+                        how Curen's timeline and budget plan may be vulnerable to underestimation of risk."
                       </div>
                     </div>
                   </li>
@@ -395,7 +395,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "For each identified failure risk (e.g., scaling the prototype to commercial readiness), propose
                         2-3 concrete mitigation strategies (like strategic partnerships, phased pilot programs, modular
-                        design, staged capital raises).”
+                        design, staged capital raises)."
                       </div>
                     </div>
                   </li>
@@ -407,7 +407,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 5: Leadership/Team */}
-      <Card id="card-5" ref={(el) => (cardRefs.current[4] = el)}>
+      <Card id="card-5" ref={(el) => { cardRefs.current[4] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">05 / 15</span>
           <h2 className="text-4xl font-bold">5. Leadership/Team</h2>
@@ -461,8 +461,8 @@ export default function SerafDeepDive() {
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Assuming minimal business experience in the founding team beyond academia, propose a roadmap to
-                        upskill or supplement the team’s commercial capabilities. Suggest typical roles (COO, CFO, Head
-                        of BD) and the ideal candidate backgrounds, referencing successful battery startups.”
+                        upskill or supplement the team's commercial capabilities. Suggest typical roles (COO, CFO, Head
+                        of BD) and the ideal candidate backgrounds, referencing successful battery startups."
                       </div>
                     </div>
                   </li>
@@ -474,7 +474,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "If given short bios or public LinkedIn data for the founders, generate a hypothesis about their
                         leadership styles and how that might shape culture, team growth, or investor relations. Note any
-                        red flags or mismatches that could become problems as they scale.”
+                        red flags or mismatches that could become problems as they scale."
                       </div>
                     </div>
                   </li>
@@ -486,7 +486,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 6: Technology / IP / Roadmap */}
-      <Card id="card-6" ref={(el) => (cardRefs.current[5] = el)}>
+      <Card id="card-6" ref={(el) => { cardRefs.current[5] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">06 / 15</span>
           <h2 className="text-4xl font-bold">6. Technology / IP / Roadmap</h2>
@@ -550,7 +550,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Using any mention of round-trip efficiency, energy density, chemical stability, and cost in
                         publicly available references about copper flow batteries, estimate a feasibility score (1-10
-                        scale) for near-term commercial viability, and identify any immediate R&D red flags.”
+                        scale) for near-term commercial viability, and identify any immediate R&D red flags."
                       </div>
                     </div>
                   </li>
@@ -564,7 +564,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Outline potential environmental, shipping, and storage regulations that may apply to
                         copper-based electrolytes in large-scale installations. Evaluate whether these regulations
-                        present a barrier or potential advantage compared to lithium-ion battery handling.”
+                        present a barrier or potential advantage compared to lithium-ion battery handling."
                       </div>
                     </div>
                   </li>
@@ -576,7 +576,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 7: Customer Need / Go-To-Market (GTM) */}
-      <Card id="card-7" ref={(el) => (cardRefs.current[6] = el)}>
+      <Card id="card-7" ref={(el) => { cardRefs.current[6] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">07 / 15</span>
           <h2 className="text-4xl font-bold">7. Customer Need / Go-To-Market (GTM)</h2>
@@ -627,10 +627,10 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Generate an ‘Ideal Customer Profile’ for Curen’s early pilot deployments. Include the typical
+                        "Generate an 'Ideal Customer Profile' for Curen's early pilot deployments. Include the typical
                         energy storage capacity range (5kW to 5MW), region (e.g., Nordics/EU for regulatory incentives),
                         financial profile (able to invest in pilot projects), and risk tolerance (willing to test novel
-                        flow battery chemistry).”
+                        flow battery chemistry)."
                       </div>
                     </div>
                   </blockquote>
@@ -640,9 +640,9 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Compare Europe's market incentives for green energy storage with North America’s (focusing on
+                        "Compare Europe's market incentives for green energy storage with North America's (focusing on
                         states with strong renewables targets like California and New York). Which region offers the
-                        best pilot environment for Curen’s copper redox flow battery, and why?”
+                        best pilot environment for Curen's copper redox flow battery, and why?"
                       </div>
                     </div>
                   </blockquote>
@@ -654,7 +654,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 8: Uniqueness / Competition */}
-      <Card id="card-8" ref={(el) => (cardRefs.current[7] = el)}>
+      <Card id="card-8" ref={(el) => { cardRefs.current[7] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">08 / 15</span>
           <h2 className="text-4xl font-bold">8. Uniqueness / Competition</h2>
@@ -718,7 +718,7 @@ export default function SerafDeepDive() {
                         "For each major competitor in flow batteries (Invinity, ESS Inc., Sumitomo, CellCube), create a
                         concise SWOT analysis (Strengths, Weaknesses, Opportunities, Threats). Then synthesize how Curen
                         could position against these established players (e.g., focus on lower cost materials, simpler
-                        system design).”
+                        system design)."
                       </div>
                     </div>
                   </li>
@@ -730,7 +730,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Compare the patent density and families around copper flow batteries vs. vanadium flow
                         batteries. Is copper-based IP significantly less crowded, offering a freedom-to-operate
-                        advantage or more open innovation potential?”
+                        advantage or more open innovation potential?"
                       </div>
                     </div>
                   </li>
@@ -742,7 +742,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 9: Market Size & Opportunity */}
-      <Card id="card-9" ref={(el) => (cardRefs.current[8] = el)}>
+      <Card id="card-9" ref={(el) => { cardRefs.current[8] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">09 / 15</span>
           <h2 className="text-4xl font-bold">9. Market Size & Opportunity</h2>
@@ -791,10 +791,10 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Factor in the EU’s Fit for 55 package or similar policy efforts. How might new incentives,
+                        "Factor in the EU's Fit for 55 package or similar policy efforts. How might new incentives,
                         carbon taxes, or utility-scale energy storage mandates expand the potential TAM for flow
                         batteries by 2030? Include references to any relevant directives or legislation that could drive
-                        adoption.”
+                        adoption."
                       </div>
                     </div>
                   </li>
@@ -807,7 +807,7 @@ export default function SerafDeepDive() {
                         "Segment the market opportunity into near-term (1–2 years: pilot + demonstration projects),
                         mid-term (3–5 years: early commercial adoption), and long-term (5+ years: scale to mainstream).
                         Provide separate TAM/SAM/SOM estimates for each stage, noting key triggers (e.g., technology
-                        readiness, policy changes).”
+                        readiness, policy changes)."
                       </div>
                     </div>
                   </li>
@@ -819,7 +819,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 10: Financials / Funding / Projections */}
-      <Card id="card-10" ref={(el) => (cardRefs.current[9] = el)}>
+      <Card id="card-10" ref={(el) => { cardRefs.current[9] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">10 / 15</span>
           <h2 className="text-4xl font-bold">10. Financials / Funding / Projections (Requires assumptions)</h2>
@@ -876,7 +876,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Perform a sensitivity analysis on the projected cost per kWh (CapEx) and round-trip efficiency.
                         Show how a 10% variance in each factor impacts final gross margins and break-even points over 5
-                        years. Assume a base-case cost of €200/kWh and 75% round-trip efficiency.”
+                        years. Assume a base-case cost of €200/kWh and 75% round-trip efficiency."
                       </div>
                     </div>
                   </div>
@@ -890,7 +890,7 @@ export default function SerafDeepDive() {
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Project monthly or quarterly cash burn for the next 18 months, factoring in R&D equipment
                         purchases, pilot site construction, and a small marketing budget. Identify when the company hits
-                        critical liquidity points where next fundraising is essential.”
+                        critical liquidity points where next fundraising is essential."
                       </div>
                     </div>
                   </div>
@@ -902,7 +902,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 11: Milestone Generation */}
-      <Card id="card-11" ref={(el) => (cardRefs.current[10] = el)}>
+      <Card id="card-11" ref={(el) => { cardRefs.current[10] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">11 / 15</span>
           <h2 className="text-4xl font-bold">11. Milestone Generation</h2>
@@ -964,7 +964,7 @@ export default function SerafDeepDive() {
                           "Suggest 3–5 Key Performance Indicators (KPIs) for each milestone category (Tech, Commercial,
                           Team, Funding), specifically relevant to a copper flow battery startup (e.g., validated cycle
                           life, stable electrolyte performance over 500 cycles, or pilot system acceptance tests from a
-                          recognized energy utility).”
+                          recognized energy utility)."
                         </div>
                       </div>
                     </div>
@@ -983,7 +983,7 @@ export default function SerafDeepDive() {
                         <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                           "Brainstorm ways to increase investor confidence by publicly demonstrating progress, e.g.,
                           showcasing the 5kW system at an industry expo, publishing test data in a peer-reviewed
-                          journal, or co-marketing with a well-known renewable project developer.”
+                          journal, or co-marketing with a well-known renewable project developer."
                         </div>
                       </div>
                     </div>
@@ -996,7 +996,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 12: Exit Strategy */}
-      <Card id="card-12" ref={(el) => (cardRefs.current[11] = el)}>
+      <Card id="card-12" ref={(el) => { cardRefs.current[11] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">12 / 15</span>
           <h2 className="text-4xl font-bold">12. Exit Strategy</h2>
@@ -1064,7 +1064,7 @@ export default function SerafDeepDive() {
                         "Find 2–3 recent acquisitions of energy storage startups by large utility or industrial
                         conglomerates (e.g., TotalEnergies acquiring Saft, Shell acquiring Sonnen). Summarize the deals,
                         valuation multiples, and synergy rationales. Based on these, propose the most probable exit
-                        scenario for Curen.”
+                        scenario for Curen."
                       </div>
                     </div>
                   </li>
@@ -1075,8 +1075,8 @@ export default function SerafDeepDive() {
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
                         "Compare the pros and cons of pursuing an IPO (like ESS Inc. SPAC route) versus a strategic
-                        acquisition by a big industrial player. Factor in the team’s academic origin, the capital
-                        intensity of battery manufacturing, and market appetite for hardware IPOs.”
+                        acquisition by a big industrial player. Factor in the team's academic origin, the capital
+                        intensity of battery manufacturing, and market appetite for hardware IPOs."
                       </div>
                     </div>
                   </li>
@@ -1088,7 +1088,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 13: Deal Terms */}
-      <Card id="card-13" ref={(el) => (cardRefs.current[12] = el)}>
+      <Card id="card-13" ref={(el) => { cardRefs.current[12] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">13 / 15</span>
           <h2 className="text-4xl font-bold">13. Deal Terms (Connects to valuation & risk)</h2>
@@ -1135,11 +1135,11 @@ export default function SerafDeepDive() {
                     <p className="text-sm text-muted-foreground mb-2">Prompt Example:</p>
                     <div className="bg-secondary/50 rounded-lg border border-border/30 overflow-hidden">
                       <div className="p-4 font-mono text-sm whitespace-pre-wrap">
-                        "Assume you’re negotiating a seed round for Curen. Provide a sample term sheet from the
-                        investor’s perspective that includes a €4M post-money valuation, a 1x liquidation preference,
-                        and a 10% option pool. Then revise it from the founder’s perspective to reflect stronger founder
+                        "Assume you're negotiating a seed round for Curen. Provide a sample term sheet from the
+                        investor's perspective that includes a €4M post-money valuation, a 1x liquidation preference,
+                        and a 10% option pool. Then revise it from the founder's perspective to reflect stronger founder
                         protections and higher pre-money valuation. Highlight where tensions might arise and potential
-                        compromises.”
+                        compromises."
                       </div>
                     </div>
                   </li>
@@ -1154,7 +1154,7 @@ export default function SerafDeepDive() {
                         "Explain how a Right of First Refusal (ROFR) and co-sale provisions might be critical in this
                         seed round, given that the main intellectual property is concentrated in one or two
                         founder-researchers. What protective measures can an investor include to ensure continuity if
-                        the academic founders leave?”
+                        the academic founders leave?"
                       </div>
                     </div>
                   </li>
@@ -1166,7 +1166,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 14: Additional Advanced Tips */}
-      <Card id="card-14" ref={(el) => (cardRefs.current[13] = el)}>
+      <Card id="card-14" ref={(el) => { cardRefs.current[13] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">14 / 15</span>
           <h2 className="text-4xl font-bold">Additional Advanced Tips (from Augmentations)</h2>
@@ -1209,7 +1209,7 @@ export default function SerafDeepDive() {
                     </p>
                     <div className="bg-background/50 rounded-lg border border-border/30 p-3">
                       <p className="text-xs text-muted-foreground font-mono">
-                        "Here’s an Excel table of raw cost data for copper flow battery components vs. lithium-ion.
+                        "Here's an Excel table of raw cost data for copper flow battery components vs. lithium-ion.
                         Please generate 3 cost scenarios (Base, Best, Worst) and produce charts showing how these costs
                         evolve over 5 years."
                       </p>
@@ -1242,8 +1242,8 @@ export default function SerafDeepDive() {
                 </p>
                 <div className="bg-background/50 rounded-lg border border-border/30 p-3">
                   <p className="text-xs text-muted-foreground font-mono">
-                    "Given that Curen touts sustainability, ask AI to create an ‘Environmental Impact Statement’
-                    comparing copper’s mining/refining lifecycle footprint vs. typical lithium-ion. Identify any supply
+                    "Given that Curen touts sustainability, ask AI to create an 'Environmental Impact Statement'
+                    comparing copper's mining/refining lifecycle footprint vs. typical lithium-ion. Identify any supply
                     chain concerns or responsible sourcing certifications that Curen should consider."
                   </p>
                 </div>
@@ -1254,7 +1254,7 @@ export default function SerafDeepDive() {
       </Card>
 
       {/* Card 15: Key Reminders & Wrap-Up */}
-      <Card id="card-15" ref={(el) => (cardRefs.current[14] = el)}>
+      <Card id="card-15" ref={(el) => { cardRefs.current[14] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">15 / 15</span>
           <h2 className="text-4xl font-bold gradient-heading">Key Reminders & Wrap-Up</h2>
