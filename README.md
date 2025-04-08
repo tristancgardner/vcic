@@ -10,3 +10,7 @@ To add or update documents:
 
 1. Place the files in the `public/documents/` directory
 2. Update the `documents` array in `app/page.tsx` with the new document information
+
+# Build Logs
+
+ `First successful deployment 250408`
