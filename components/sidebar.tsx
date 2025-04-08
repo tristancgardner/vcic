@@ -74,7 +74,7 @@ export default function Sidebar() {
       {!isMobileView && (
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`fixed top-4 ${isOpen ? "left-[260px]" : "left-4"} z-50 p-2 rounded-md bg-background text-foreground border border-border hidden md:flex items-center justify-center transition-all duration-300`}
+          className={`fixed top-4 ${isOpen ? "left-260" : "left-4"} z-50 p-2 rounded-md bg-background text-foreground border border-border hidden md:flex items-center justify-center transition-all duration-300`}
           aria-label="Toggle sidebar"
         >
           {isOpen ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
@@ -94,7 +94,7 @@ export default function Sidebar() {
               <span className="text-xl font-semibold">VCIC</span>
               <div className="flex items-center text-sm mt-1">
                 <span className="text-muted-foreground">Aalto</span>
-                <div className="h-[2px] w-6 mx-2 bg-gradient-to-r from-primary/40 to-primary/80"></div>
+                <div className="h-2px w-6 mx-2 bg-gradient-to-r from-primary/40 to-primary/80"></div>
                 <span className="text-muted-foreground">UNC</span>
               </div>
             </div>

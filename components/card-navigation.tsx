@@ -76,7 +76,7 @@ export default function CardNavigation({ totalCards, activeCardId, onCardClick, 
           <ChevronUp className="h-5 w-5" />
         </button>
 
-        <div className="h-[300px] overflow-y-auto py-2 scrollbar-hide" ref={navRef}>
+        <div className="h-300 overflow-y-auto py-2 scrollbar-hide" ref={navRef}>
           <div className="flex flex-col items-stretch space-y-2 px-2">
             {Array.from({ length: totalCards }).map((_, index) => {
               const isCurrent = index === activeIndex

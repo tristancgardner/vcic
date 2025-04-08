@@ -164,7 +164,7 @@ export default function UniqueStrategies() {
 
                     <div
                       className={`overflow-hidden transition-all duration-300 ${
-                        expandedItems.includes(index) ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+                        expandedItems.includes(index) ? "max-h-1000 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
                       {/* Apple-style alternating layout */}

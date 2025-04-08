@@ -59,7 +59,7 @@ export default function FinancialsCapTables() {
               <p className="text-muted-foreground mb-6">
                 The global grid-scale battery market is projected to grow at a CAGR of ~27% from 2023 to 2030.
               </p>
-              <div className="h-[400px] w-full">
+              <div className="h-400 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     data={marketData}
@@ -100,7 +100,7 @@ export default function FinancialsCapTables() {
               <p className="text-muted-foreground mb-6">
                 Current distribution of grid-scale energy storage technologies by market share.
               </p>
-              <div className="h-[400px] w-full">
+              <div className="h-400 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <PieChart>
                     <Pie
@@ -140,7 +140,7 @@ export default function FinancialsCapTables() {
               <p className="text-muted-foreground mb-6">
                 Comparison of key flow battery companies by annual revenue and total funding raised (in millions USD).
               </p>
-              <div className="h-[400px] w-full">
+              <div className="h-400 w-full">
                 <ResponsiveContainer width="100%" height="100%">
                   <BarChart
                     data={competitorData}
