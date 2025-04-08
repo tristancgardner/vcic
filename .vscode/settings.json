@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.fseventsd": true,
+        "**/.lucid": true,
+        "**/.Spotlight-V100": true
+    },
+    "hide-files.files": []
+}

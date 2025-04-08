@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --border: 214 32% 91%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96.1%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --border: 217 33% 17%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle at top right, hsl(262 83% 15% / 0.15), transparent 40%),
+    radial-gradient(circle at bottom left, hsl(217 91% 15% / 0.15), transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Sidebar adjustments */
+body.sidebar-open main {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  body.sidebar-open main {
+    margin-left: 16rem; /* 256px or 16rem for the sidebar width */
+    padding-left: 1rem;
+  }
+
+  main {
+    padding: 2rem;
+    transition: margin-left 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  }
+}
+
+.card-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.card {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary) / 0.3), transparent);
+}
+
+.card-content {
+  position: relative;
+  z-index: 10;
+}
+
+.gradient-heading {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  line-height: 1.2; /* Add this line to increase line height */
+  padding-bottom: 0.1em; /* Add padding to bottom for descenders */
+  margin-bottom: 0.2em; /* Add margin to ensure spacing between elements */
+}
+
+.glass-card {
+  background: hsl(var(--card) / 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border) / 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  @apply px-4 py-2 text-sm font-medium rounded-md transition-colors;
+}
+
+.tab-active {
+  @apply bg-secondary text-foreground;
+}
+
+.tab-inactive {
+  @apply text-muted-foreground hover:text-foreground hover:bg-muted/50;
+}
+
+.nav-item {
+  @apply flex items-center px-3 py-2 rounded-md text-sm transition-colors;
+}
+
+.nav-item-active {
+  @apply bg-secondary text-foreground font-medium;
+}
+
+.nav-item-inactive {
+  @apply text-muted-foreground hover:text-foreground hover:bg-muted/50;
+}
+
+.btn-primary {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md text-sm font-medium transition-colors;
+}
+
+.card-item {
+  @apply border border-border rounded-lg p-6 bg-card;
+}
+
+/* Fix for blue titles with descenders */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3; /* Increase line height for all headings */
+  padding-bottom: 0.1em; /* Add padding to accommodate descenders */
+}
+
+.text-primary {
+  line-height: 1.3; /* Specific fix for text-primary elements */
+}
+
+/* Fix for section titles with numbers */
+[class*="text-primary/80"] {
+  line-height: 1.4;
+  padding-bottom: 0.15em;
+  display: inline-block; /* Ensures the padding is applied correctly */
+}
+
+/* Hide scrollbars but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Transition styles for expandable sections */
+.max-h-0 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.max-h-[500px] {
+  max-height: 500px;
+  overflow: auto;
+}
+
+/* File upload area styles */
+.border-dashed {
+  border-style: dashed;
+}
