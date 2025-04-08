@@ -80,7 +80,7 @@ export default function DueDiligence() {
       />
 
       {/* Card #1: Title & Intro */}
-      <Card id="card-1" ref={(el) => (cardRefs.current[0] = el)}>
+      <Card id="card-1" ref={(el) => { cardRefs.current[0] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">01 / Introduction</span>
           <h1 className="text-4xl md:text-5xl font-bold gradient-heading">
@@ -101,7 +101,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #2: Area 1 – Market Opportunity Assessment */}
-      <Card id="card-2" ref={(el) => (cardRefs.current[1] = el)}>
+      <Card id="card-2" ref={(el) => { cardRefs.current[1] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">02 / Market Assessment</span>
           <h2 className="text-3xl font-bold">Area 1: Market Opportunity Assessment</h2>
@@ -158,7 +158,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #3: Area 2 – Technology & IP Assessment */}
-      <Card id="card-3" ref={(el) => (cardRefs.current[2] = el)}>
+      <Card id="card-3" ref={(el) => { cardRefs.current[2] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">03 / Technology Assessment</span>
           <h2 className="text-3xl font-bold">Area 2: Technology & IP Assessment</h2>
@@ -214,7 +214,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #4: Area 3 – Team Assessment (Initial Scan) */}
-      <Card id="card-4" ref={(el) => (cardRefs.current[3] = el)}>
+      <Card id="card-4" ref={(el) => { cardRefs.current[3] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">04 / Team Assessment</span>
           <h2 className="text-3xl font-bold">Area 3: Team Assessment (Initial Scan)</h2>
@@ -272,7 +272,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #5: Area 4 – Synthesis & Initial Comparison */}
-      <Card id="card-5" ref={(el) => (cardRefs.current[4] = el)}>
+      <Card id="card-5" ref={(el) => { cardRefs.current[4] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">05 / Synthesis & Comparison</span>
           <h2 className="text-3xl font-bold">Area 4: Synthesis & Initial Comparison</h2>
@@ -329,7 +329,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #6: Area 5 – Quick Competitive Landscape */}
-      <Card id="card-6" ref={(el) => (cardRefs.current[5] = el)}>
+      <Card id="card-6" ref={(el) => { cardRefs.current[5] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">06 / Competitive Landscape</span>
           <h2 className="text-3xl font-bold">Area 5: Quick Competitive Landscape</h2>
@@ -382,7 +382,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #7: Area 6 – High-Level Business/Financial Peek */}
-      <Card id="card-7" ref={(el) => (cardRefs.current[6] = el)}>
+      <Card id="card-7" ref={(el) => { cardRefs.current[6] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">07 / Business & Financial</span>
           <h2 className="text-3xl font-bold">Area 6: High-Level Business/Financial Peek</h2>
@@ -437,7 +437,7 @@ export default function DueDiligence() {
       </Card>
 
       {/* Card #8: Outcome of This Phase */}
-      <Card id="card-8" ref={(el) => (cardRefs.current[7] = el)}>
+      <Card id="card-8" ref={(el) => { cardRefs.current[7] = el; }}>
         <div className="space-y-6 max-w-4xl">
           <span className="inline-block text-sm font-medium text-primary/80 mb-2">08 / Conclusion</span>
           <h2 className="text-3xl font-bold gradient-heading">Outcome of this Phase</h2>
